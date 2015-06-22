@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+    
+    <head>
+        
+        <title>Bem vindo ao Solvo!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+                
+    </head>
+    
+    <body>
+        
+        <div>
+            <img src="logo.png" class="logo">
+        </div>       
+        
+          <div class="whitebox">            
+        
+        <div class="container">
+            <form class="form-signin">
+                
+                <p>
+                <input type="email"
+                       name="userid"
+                       class="form-control" 
+                       placeholder="Login" 
+                       required autofocus>
+                
+                <p>
+                <input type="password"
+                       name="pswrd"
+                       class="form-control" 
+                       placeholder="Senha"
+                       required autofocus>
+                
+                <div id="space" class="checkbox">
+                    
+                    <label>
+                        
+            <input type="checkbox" 
+                   value="remember-me">Lembrar de mim
+            
+            <div class="et">
+                <a href="esqueci.html">Esqueci minha senha</a>
+            </div>
+            
+            <div class="et">  
+                <a href="novaconta.html">Criar nova conta</a>
+            </div>
+                
+                    </label>
+                   
+        </div>
+                
+        <button class="btn btn-lg btn-primary btn-block" 
+                type="submit"
+                onclick="check(this.form)">Entrar</button>                
+                
+      </form>
+            
+    </div> <!-- /container -->     
+    
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "alexllg2@hotmail.com" && form.pswrd.value == "debianze") {
+                    window.open('feed.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    
+                }
+            }
+        </script>
+    
+          </div>
+
+    </body>
+</html>
